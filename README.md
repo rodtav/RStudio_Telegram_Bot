@@ -7,10 +7,10 @@ O objetivo deste bot é permitir a aplicação de questionários, preferencialme
 ## Sobre bots do telegram
 O Telegram possibilita a livre criação de bots por desenvolvedores, fornecendo uma [documentação](https://core.telegram.org/bots) detalhada sobre como criar bots.
 
-## Bots de Telegram no R
+## Sobre bots do Telegram no R
 O pacote [telegram.bot](https://github.com/ebeneditos/telegram.bot) implementa vários métodos disponíveis na API de bots do Telegram, contando também com uma [documentação](https://cran.r-project.org/web/packages/telegram.bot/telegram.bot.pdf) detalhada no CRAN.
 
-## Visão geral
+## Visão geral deste bot
 Para construir este bot, foram utilizados
 * R como linguagem de programação
 * Rstudio server como IDE para edição do código
@@ -18,8 +18,11 @@ Para construir este bot, foram utilizados
 * telegram.bot como pacote do R para interação com a API de bots do Telegram
 * RMariaDB como pacote do R para interação com o banco de dados MySQL
 
-## Variáveis de ambiente necessárias
-Para funcionar, é necessário haver um arquivo com variáveis de ambiente .Renviron no mesmo diretório do código principal. Nesse arquivo, devem ser definidas as seguintes variáveis
+## Como usar este bot
+Para utilizar este bot, é necessário ter um ambiente Linux com o MySQL instalado, a linguagem R e um arquivo .Renviron com as variáveis de ambiente necessárias.
+
+### Variáveis de ambiente necessárias
+O arquivo .Renviron define as variáveis de ambiente necessárias para rodar o bot e deve ser criado no mesmo diretório do código principal. Nesse arquivo, devem ser definidas as seguintes variáveis
 
 | Variável                 | Definição                     |
 |--------------------------|-------------------------------|
