@@ -5,6 +5,7 @@ library(DBI)
 library(RMariaDB)
 library(Dict)
 library(dplyr)
+library(readxl)
 
 ################################################################################
 
@@ -40,6 +41,16 @@ arquivos_questionarios <- list.files(path=caminho_arquivos_questionarios,
                                      pattern = "*.r",full.names = TRUE,ignore.case = TRUE)
 
 sapply(c(arquivos_comandos, arquivos_utilidades, arquivos_questionarios), source, .GlobalEnv)
+
+################################################################################
+
+# Lê os questionários para memória
+catalogo_questionarios <- read.csv(caminho_arquivo_catalogo_questionarios,
+                                   stringsAsFactors = FALSE,
+                                   header = TRUE,
+                                   sep = ";")
+
+
 
 ################################################################################
 

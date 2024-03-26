@@ -1,3 +1,4 @@
-﻿Nome;Identificador;Tipo
-Socioeconômico;socioeconomico;planilha
-Pessoa Com Deficiência;pcd;codigo
+﻿Nome;Identificador;Arquivo
+Socioeconômico 1;socioeconomico1;socioeconomico.csv
+Socioeconômico 2;socioeconomico2;socioeconomico.xls
+Socioeconômico 3;socioeconomico3;socioeconomico.xlsx
