@@ -65,6 +65,6 @@ questionarios_2 <- function(bot, update, db_con, dados_usuario){
   
   # Chama a primeira função do comando
   estado <- 0
-  do.call(paste(questionario_selecionado,"_", estado, sep=''), list(bot,update,db_con,dados_usuario))
+  do.call(paste("roteia_questionarios_", estado, sep=''), list(bot,update,db_con,dados_usuario))
 }
 
